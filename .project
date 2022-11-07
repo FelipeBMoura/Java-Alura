@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Alura</name>
+	<comment></comment>
+	<projects>
+		<project>Java JRE e JDK</project>
+		<project>sintaxe_basica</project>
+		<project>sintaxe_variaveis_e_fluxo</project>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+</projectDescription>

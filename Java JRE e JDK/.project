@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>sintaxe_variaveis_e_fluxo</name>
+	<name>Java JRE e JDK</name>
 	<comment></comment>
 	<projects>
-		<project>Alura</project>
-		<project>Java JRE e JDK</project>
-		<project>sintaxe_basica</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -19,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1667424110042</id>
+			<id>1667680656468</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
