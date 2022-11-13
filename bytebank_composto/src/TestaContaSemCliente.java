@@ -9,7 +9,7 @@ public class TestaContaSemCliente {
 		
 		System.out.println(contaDaMarcela.titular);
 		
-		System.out.println(contaDaMarcela.saldo);
+		System.out.println(contaDaMarcela.getSaldo());
 		
 		contaDaMarcela.titular.nome = "Marcela";
 		
