@@ -3,6 +3,20 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
+	//static quer dizer que o total faz parte da classe Conta, e não de cada objeto criado
+	//por isso as variáveis ficam em itálico
+	private static int total; 
+	
+	//Construtor que o java chama automaticamente
+	//Não é obrigatório escreve-lo
+	//Mas pode ser efeito e editá-lo
+	public Conta(int agencia, int numero) {
+		total++;
+		System.out.println("o total de contas é " + total);
+		this.agencia = agencia;
+		this.numero = numero;
+		System.out.println("estou criando uma conta " + this.numero);
+	}
 	
 	public void deposita(double valor) {				
 		this.saldo += valor;		
@@ -36,6 +50,10 @@ public class Conta {
 	}
 	
 	public void setNumero(int numero){
+		if(numero <= 0) {
+			System.out.println("não pode valor menor ou igual a zero");
+			return;
+		}
 		this.numero = numero;
 	}
 	
@@ -44,6 +62,10 @@ public class Conta {
 	}
 	
 	public void setAgencia(int agencia) {
+		if(agencia <= 0) {
+			System.out.println("não pode valor menor ou igual a zero.");
+			return; //como tem o void pode returnar nada
+		}
 		this.agencia = agencia;
 	}
 	
@@ -53,6 +75,14 @@ public class Conta {
 	
 	public Cliente getTitular() {
 		return titular;
+	}
+	
+	// para que o total possa ser acessado encapsulado
+	// static quer dizer que é da classe, então não precisa mais instanciar para acessar
+	// neste caso, poderíamos chamar assim -> Conta.getTotal()
+	// dentro do método estático, o this não é acessível
+	public static int getTotal() {
+		return Conta.total;
 	}
 	
 }
