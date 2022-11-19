@@ -16,9 +16,9 @@ public class Gerente extends Funcionario{ //o "extends" é o camndo para Gerente
 		}
 	}
 	
-//	public double getBonificacao() {
-//		return this.salario * 0.1;
-//	}
+	public double getBonificacao() {
+		return super.getBonificacao() + super.salario; // super significa que o atributo pertence a classe mãe (que neste caso é a classe Funcionario)
+	}
 	
 	
 }
