@@ -3,6 +3,9 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="Conta"/>
     <fullyQualifiedTypeName name="bytebank_herdado.FuncionarioTeste"/>
-    <fullyQualifiedTypeName name="bytebank_herdado.Funcionario"/>
     <fullyQualifiedTypeName name="bytebank_herdado.Gerente"/>
+    <fullyQualifiedTypeName name="bytebank_herdado.ControleBonificacao"/>
+    <fullyQualifiedTypeName name="bytebank_herdado.Funcionario"/>
+    <fullyQualifiedTypeName name="bytebank_herdado.EditorVideo"/>
+    <fullyQualifiedTypeName name="bytebank_herdado.Designer"/>
 </qualifiedTypeNameHistroy>
