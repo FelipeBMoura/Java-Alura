@@ -1,14 +1,18 @@
 package bytebank_herdado;
 
-public class Funcionario {
+//abstract faz com que Funcionario não possa ser mais criado, já que é uma classe abstrata.
+//somente as classes filhas podem ser criadas
+//então não pode mais ser instanciada
+public abstract class Funcionario { 
 	
 	private String nome;
 	private String cpf;
 	protected double salario; //protected significa que é público para as classes filhas
 	
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+	//abstract no métod significa que é método sem corpo, sem implementação.
+	//não pode ser instanciado
+	//então implementa-se nas classes filhas
+	public abstract double getBonificacao(); 
 	
 	public String getNome() {
 		return nome;

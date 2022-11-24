@@ -8,4 +8,6 @@
     <fullyQualifiedTypeName name="bytebank_herdado.Funcionario"/>
     <fullyQualifiedTypeName name="bytebank_herdado.EditorVideo"/>
     <fullyQualifiedTypeName name="bytebank_herdado.Designer"/>
+    <fullyQualifiedTypeName name="ContaCorrente"/>
+    <fullyQualifiedTypeName name="ContaPoupanca"/>
 </qualifiedTypeNameHistroy>

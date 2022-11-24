@@ -1,6 +1,6 @@
-public class Conta {
-	private double saldo; //private é utilizado para encapsular atributos.
-	private int agencia;
+public abstract class Conta {
+	protected double saldo; //protected quer dizer que é público para os filhos
+	private int agencia; //private é utilizado para encapsular atributos.
 	private int numero;
 	private Cliente titular;
 	//static quer dizer que o total faz parte da classe Conta, e não de cada objeto criado
@@ -19,9 +19,7 @@ public class Conta {
 //		System.out.println("estou criando uma conta " + this.numero);
 	}
 	
-	public void deposita(double valor) {				
-		this.saldo += valor;		
-	}
+	public abstract void deposita(double valor);
 	
 	public boolean saca(double valor) {		
 		if(this.saldo >= valor) {

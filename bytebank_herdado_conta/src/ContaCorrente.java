@@ -5,12 +5,17 @@ public class ContaCorrente extends Conta {
 		super(agencia, numero);	
 	}
 
-	@Override // sobre escreve o método saca da super classe
+	@Override // sobrescreve o método saca da super classe
 	public boolean saca(double valor) {
 		
 		double valorASacar = valor + 0.2;
 		
 		return super.saca(valorASacar);
+	}
+
+	@Override
+	public void deposita(double valor) {
+		super.saldo += valor;		
 	}
 	
 }
