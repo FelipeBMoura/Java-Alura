@@ -3,7 +3,7 @@ package bytebank_herdado;
 //abstract faz com que Funcionario não possa ser mais criado, já que é uma classe abstrata.
 //somente as classes filhas podem ser criadas
 //então não pode mais ser instanciada
-public abstract class Funcionario { 
+public abstract class Funcionario {
 	
 	private String nome;
 	private String cpf;
