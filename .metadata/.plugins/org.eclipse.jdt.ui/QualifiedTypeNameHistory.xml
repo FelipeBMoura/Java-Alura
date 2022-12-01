@@ -10,4 +10,8 @@
     <fullyQualifiedTypeName name="bytebank_herdado.Designer"/>
     <fullyQualifiedTypeName name="ContaCorrente"/>
     <fullyQualifiedTypeName name="ContaPoupanca"/>
+    <fullyQualifiedTypeName name="bytebank_herdado.SistemaInterno"/>
+    <fullyQualifiedTypeName name="bytebank_herdado.Administrador"/>
+    <fullyQualifiedTypeName name="bytebank_herdado.FuncionarioAutenticavel"/>
+    <fullyQualifiedTypeName name="bytebank_herdado.Autenticavel"/>
 </qualifiedTypeNameHistroy>
