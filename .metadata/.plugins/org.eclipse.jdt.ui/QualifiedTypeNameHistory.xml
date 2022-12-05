@@ -8,10 +8,14 @@
     <fullyQualifiedTypeName name="bytebank_herdado.Funcionario"/>
     <fullyQualifiedTypeName name="bytebank_herdado.EditorVideo"/>
     <fullyQualifiedTypeName name="bytebank_herdado.Designer"/>
-    <fullyQualifiedTypeName name="ContaCorrente"/>
     <fullyQualifiedTypeName name="ContaPoupanca"/>
     <fullyQualifiedTypeName name="bytebank_herdado.SistemaInterno"/>
-    <fullyQualifiedTypeName name="bytebank_herdado.Administrador"/>
     <fullyQualifiedTypeName name="bytebank_herdado.FuncionarioAutenticavel"/>
     <fullyQualifiedTypeName name="bytebank_herdado.Autenticavel"/>
+    <fullyQualifiedTypeName name="bytebank_herdado.Administrador"/>
+    <fullyQualifiedTypeName name="bytebank_herdado.AutenticacaoUtil"/>
+    <fullyQualifiedTypeName name="Tributavel"/>
+    <fullyQualifiedTypeName name="ContaCorrente"/>
+    <fullyQualifiedTypeName name="SeguroDeVida"/>
+    <fullyQualifiedTypeName name="CalculadorDeImposto"/>
 </qualifiedTypeNameHistroy>
