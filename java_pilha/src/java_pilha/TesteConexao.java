@@ -9,8 +9,9 @@ public class TesteConexao {
 		}catch(IllegalStateException ex) {
 			System.out.println("Deu erro na conexao");
 		}
-		
-		//-----------------------------
+
+//Jeito antigo de fazer a conexão. Acima está a maneira mais nova e com menos código.
+//----------------------------------------
 //		Conexao con = null;		
 //		try {
 //			con = new Conexao();
