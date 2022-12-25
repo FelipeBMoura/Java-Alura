@@ -1,3 +1,5 @@
+package br.com.bytebank.banco.modelo;
+
 public abstract class Conta {
 	protected double saldo; //protected quer dizer que é público para os filhos
 	private int agencia; //private é utilizado para encapsular atributos.
