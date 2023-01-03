@@ -103,4 +103,11 @@ public abstract class Conta {
 		return Conta.total;
 	}
 	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Número: " + this.numero + ", Agência: " + this.agencia;
+	}
+	
+	
 }
