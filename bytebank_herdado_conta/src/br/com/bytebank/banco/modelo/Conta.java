@@ -7,7 +7,7 @@ package br.com.bytebank.banco.modelo;
  *
  */
 
-public abstract class Conta {
+public abstract class Conta extends Object implements Comparable<Conta>{ // Comparable permite que as contas sejam comparáveis via ordem natural
 	
 	protected double saldo; //protected quer dizer que é público para os filhos
 	private int agencia; //private é utilizado para encapsular atributos.
@@ -119,10 +119,17 @@ public abstract class Conta {
 		return true;
 	}
 	
+	
+	@Override
+		public int compareTo(Conta outra) {
+			return Double.compare(this.saldo, outra.saldo);
+		}
+	
+	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Número: " + this.numero + ", Agência: " + this.agencia;
+		return "Número: " + this.numero + ", Agência: " + this.agencia + ", Saldo: " + this.saldo;
 	}
 	
 	
