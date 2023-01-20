@@ -10,7 +10,7 @@ import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
-public class Teste {
+public class TesteClasseAnonima {
 
 	public static void main(String[] args) {
 		
@@ -47,23 +47,28 @@ public class Teste {
         // Function object
     	// NumeroDaContaComparator3 comparator = new NumeroDaContaComparator3();
         
-     // Classe anônima (lambda enxuta). A seta é a sintaxe para classe anônima neste caso
-        lista.sort((c1, c2) -> Integer.compare(c1.getNumero(), c2.getNumero()));
+        lista.sort(new Comparator<Conta>() {
+        	
+	        	@Override
+	        	public int compare(Conta c1, Conta c2) { // Classe anônima
+	        		return Integer.compare(c1.getNumero(), c2.getNumero());
+	        	}
+	        }
+		);
         
-        Comparator<Conta> comp = (Conta c1, Conta c2) -> { // Classe anônima. A seta é a sintaxe para classe anônima neste caso    			
+        Comparator<Conta> comp = new Comparator<Conta>() { // Classe anônima        	
+        		
+    		@Override
+    		public int compare(Conta c1, Conta c2) {    			
     			String nomeC1 = c1.getTitular().getNome();
     			String nomeC2 = c2.getTitular().getNome();		
     			return nomeC1.compareTo(nomeC2);
+    		} 
 		};
-		
-		lista.sort(comp);
-		
-		// Maneira de substituir o looping for em conjunto com lambda em listas
-		lista.forEach((conta) -> System.out.println(conta + ", " + conta.getTitular().getNome()));
         
-//        for (Conta conta : lista) {
-//			System.out.println(conta + ", " + conta.getTitular().getNome());
-//		}
+        for (Conta conta : lista) {
+			System.out.println(conta + ", " + conta.getTitular().getNome());
+		}
         
 	}
 
