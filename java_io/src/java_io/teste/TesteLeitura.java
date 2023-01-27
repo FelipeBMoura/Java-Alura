@@ -9,7 +9,7 @@ import java.io.Reader;
 public class TesteLeitura {
 
 	public static void main(String[] args) throws IOException {
-		// Fluxo de entrega com arquivo
+		// Fluxo de entrada com arquivo
 		
 		FileInputStream fis = new FileInputStream("lorem.txt");
 		
