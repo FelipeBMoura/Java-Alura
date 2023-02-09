@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="ContaPoupanca"/>
-    <fullyQualifiedTypeName name="bytebank_herdado.SistemaInterno"/>
-    <fullyQualifiedTypeName name="bytebank_herdado.FuncionarioAutenticavel"/>
     <fullyQualifiedTypeName name="bytebank_herdado.Autenticavel"/>
     <fullyQualifiedTypeName name="bytebank_herdado.Administrador"/>
     <fullyQualifiedTypeName name="bytebank_herdado.AutenticacaoUtil"/>
@@ -56,8 +53,11 @@
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
 </qualifiedTypeNameHistroy>
