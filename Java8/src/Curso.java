@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.IntStream;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Curso {
 	private String nome;
@@ -60,13 +61,22 @@ public class Curso {
 //    			   .filter(c -> c.getAlunos() > 100)
 //    			   .mapToInt(Curso::getAlunos);
     	
-    	int soma = cursos.stream()
+    	int sum = cursos.stream()
     			   .filter(c -> c.getAlunos() > 100)
     			   .mapToInt(Curso::getAlunos)
     			   .sum();
     	
-    	System.out.println(soma);
-    }
+    	System.out.println(sum);
+    	
+    	cursos.stream()
+        	.mapToInt(c -> c.getAlunos())
+        	.average();
+    	}
+    
+	    Stream<Curso> stream = cursos.stream()
+	    	.filter(c -> c.getAlunos() > 50);		}
 
-}
+		List<Curso> cursosFiltrados = cursos.stream()
+			.filter(c -> c.getAlunos() > 50)
+			.collect(Collectors.toList());
 
