@@ -71,12 +71,14 @@ public class Curso {
     	cursos.stream()
         	.mapToInt(c -> c.getAlunos())
         	.average();
-    	}
+    	
     
-	    Stream<Curso> stream = cursos.stream()
-	    	.filter(c -> c.getAlunos() > 50);		}
-
+	    //Stream<Curso> stream = cursos.stream()
+	    //	.filter(c -> c.getAlunos() > 50);
+	    
 		List<Curso> cursosFiltrados = cursos.stream()
 			.filter(c -> c.getAlunos() > 50)
 			.collect(Collectors.toList());
+    	}
+}
 
