@@ -5,6 +5,8 @@ import java.time.Month;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
+import javax.swing.text.DateFormatter;
+
 public class Datas {
 
 	public static void main(String[] args) {
@@ -36,6 +38,16 @@ public class Datas {
 		
 		LocalTime intervalo = LocalTime.of(15, 30);
 		System.out.println(intervalo);
+		
+		LocalDate data = LocalDate.of(2099,  1,  25);
+		
+		LocalDate agora2 = LocalDate.now();
+		
+		Period periodoData = Period.between(agora2, dataFutura);
+		System.out.println(periodoData);
+		
+		DateTimeFormatter formataAgora2 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		System.out.println(data.format(formataAgora2));
 				
 	}
 
