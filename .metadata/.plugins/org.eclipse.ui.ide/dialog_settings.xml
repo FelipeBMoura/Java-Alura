@@ -10,6 +10,11 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Felipe\Meu Drive\Estudo\Alura-Java\testes-unitarios-tdd-projeto_inicial"/>
+			<item value="C:\Users\Felipe\Desktop\2108-java-testes-unitarios-tdd-projeto_inicial"/>
+			<item value="C:\Users\Felipe\Desktop\2108-java-testes-unitarios-tdd-projeto_inicial (1).zip"/>
+			<item value="C:\Users\Felipe\Meu Drive\Estudo\Alura-Java\junit"/>
+			<item value="C:\Users\Felipe\Meu Drive\Estudo\Alura-Java"/>
 			<item value="C:\Users\Felipe\Meu Drive\Estudo\Alura"/>
 			<item value="C:\Users\Felipe\Meu Drive\Estudo\Alura\Java OO entendendo a Orientação a Objetos"/>
 			<item value="C:\Users\Felipe\Meu Drive\Estudo\Alura\Java JRE e JDK\sintaxe_variaveis_e_fluxo"/>
@@ -26,5 +31,13 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.internal.views.markers.FiltersConfigurationDialog">
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="492"/>
+		<item key="DIALOG_Y_ORIGIN" value="244"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
 	</section>
 </section>
